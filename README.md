@@ -1,5 +1,7 @@
 # angularjs-workshop @ NENTC
 
+
+
 #### Como correr o projecto
 Se tiverem node instalado, clonem o projecto e façam cd lá para dentro. 
 
