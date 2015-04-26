@@ -1,0 +1,57 @@
+{
+    "products": [{
+        "id": 1,
+        "name": "Clothes Washer",
+        "price": 2.00,
+        "category": "house",
+        "description": "This cleans clothes. Very cool if you want clean clothes."
+    }, {
+        "id": 2,
+        "name": "Dish Washer",
+        "price": 4.00,
+        "category": "house",
+        "description": "This cleans dishes. Very cool if you want clean dishes."
+    }, {
+        "id": 3,
+        "name": "Parliament cleaner",
+        "price": 8.00,
+        "category": "house",
+        "description": "This cleans parliaments. Very cool if you want clean countries."
+    },{
+        "id": 4,
+        "name": "Running shoes",
+        "price": 20.00,
+        "category": "shoes",
+        "description": "."
+    }, {
+        "id": 5,
+        "name": "Pretty shoes",
+        "price": 40.00,
+        "category": "shoes",
+        "description": "Wear this to please the ladies."
+    }, {
+        "id": 6,
+        "name": "Working boots",
+        "price": 80.00,
+        "category": "shoes",
+        "description": "Wear this to go to work."
+    },{
+        "id": 7,
+        "name": "Laptop",
+        "price": 800.00,
+        "category": "technology",
+        "description": "Standard laptop. Pretty cool for coding with angular."
+    }, {
+        "id": 8,
+        "name": "Pear Laptop",
+        "price": 2400.00,
+        "category": "technology",
+        "description": "Overpriced mambojambo laptop. Does what everyother laptop does."
+    }, {
+        "id": 9,
+        "name": "Smartphone",
+        "price": 400.00,
+        "category": "technology",
+        "description": "Mobile telephone with touchy screen. Looks like magic. How do they do these kind of stuff?"
+    }]
+}
