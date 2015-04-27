@@ -6,7 +6,8 @@ module.exports = function(grunt) {
                 options: {
                     port: 9000,
                     base: '',
-                    hostname: "0.0.0.0",
+                    hostname: "localhost",
+                    keepalive:false,
                     middleware: function(connect, options) {
                         return [
                             require('grunt-contrib-livereload/lib/utils').livereloadSnippet,
@@ -23,20 +24,10 @@ module.exports = function(grunt) {
         },
         regarde: {
             all: {
-                files: ['*/**.html', 'css/*.css', 'js/*.js'],
+                files: ['index.html', 'css/main.css', 'app/*.js', 'app/*/*.js','app/**/*.html'],
                 tasks: ['livereload']
             }
-        },
-        concat: {
-            generated: {
-                files: [{
-                    dest: 'dist/app.js',
-                    src: [
-                        '**/*.js',
-                    ]
-                }]
-            }
-        },
+        }
     });
     grunt.registerTask('serve', [
         'livereload-start',
