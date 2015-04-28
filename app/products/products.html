@@ -1,0 +1,6 @@
+<input type="text" placeholder="Product" ng-model="search">
+<div ng-repeat="p in products | filter:search">
+	<a class="h4 col-xs-12 row" ui-sref="detail({id:p.id})">{{p.name}}</a>
+	<p class="col-xs-11">Price : {{p.price}}€</p>
+	<button class="col-xs-2 btn btn-info" ng-click="addToCart(p)">Add to shopping list</button>
+</div>

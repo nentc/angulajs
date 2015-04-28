@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="workshopApp">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="AngularJS Workshop :: NENTC">
@@ -11,15 +11,24 @@
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	</head>
-	<body>
-	
+	<body class="container">
+	<div>
+		<h3>Workshop App</h3>
+		<a ui-sref="products" ui-sref-active="active">Products</a>
+		<br>
+		<a ui-sref="cart" ui-sref-active="active">My shopping Cart</a>
+	</div>
+	<div ui-view></div>
 	</body>
 	<script src="vendor/angular.js"></script>
 	<script src="vendor/angular-animate.js"></script>
-	<script src="vendor/angular-route.js"></script>
 	<script src="vendor/angular-cookies.js"></script>
 	<script src="vendor/angular-sanitize.js"></script>
 	<script src="vendor/angular-ui-router.js"></script>
 	<script src="app/app.js"></script>
 	<script src="app/routes.js"></script>
+	<script src="app/products/products.controller.js"></script>
+	<script src="app/products/products.detail.controller.js"></script>
+	<script src="app/shoppingCart/shoppingCart.controller.js"></script>
+	<script src="app/services/ProductsService.js"></script>
 </html>

@@ -1,0 +1,6 @@
+<h3>TOTAL : {{total}} €</h3>
+<div ng-repeat="p in myProducts">
+	<h4 class="col-xs-12 row">{{p.name}}</h4>
+	<p class="col-xs-11">Price : {{p.price}}€</p>
+	<button class="col-xs-2 btn btn-info" ng-click="addToCart(p)">Add to shopping list</button>
+</div>
